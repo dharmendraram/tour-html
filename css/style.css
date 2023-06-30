@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.con {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gap {
+    gap: 15px;
+}
+
+/* hero section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(18, 14, 14, 0.619), rgba(6, 15, 6, 0.619)), url(../img/mainbg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header {
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+.logo{
+    padding: 10px 0;
+}
+.sticky{
+    background-color: rgb(38, 37, 37) !important;
+    animation: fadeOut 0.9s;
+}
+@keyframes fadeOut{
+    0%{transform: translateY(-100%);}
+    100%{transform: translateY(0%);}
+}
+.list-bar{
+    font-size: 44px;
+    color: #fff;
+    display: none;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+nav ul li a i {
+    padding-left: 5px;
+}
+
+nav li {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    width: 200px;
+    background: black !important;
+    display: none;
+    border-bottom: 4px solid orange;
+}
+
+.dropdown li {
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+nav ul li:hover {
+    background-color: orange;
+    padding: 8px 8px;
+    border-radius: 10px;
+
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+
+}
+
+.dropdown::before {
+    content: '';
+    position: relative;
+    top: -22px;
+    left: 20px;
+    border: 10px solid;
+    border-color: transparent transparent black transparent;
+}
+.dropdown:hover li{color: orange;
+}
+
+.hero_inner {
+    color: #fff;
+    text-align: center;
+}
+
+.hero_inner h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.hero_inner p {
+    color: #fff;
+    text-align: center;
+}
+
+.hero_inner span {
+    color: orange;
+}
+
+/* background section1 */
+.bg1 {
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.p-4 {
+    padding: 30px 0;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.btns {
+    padding: 20px 30px;
+    border-radius: 30px;
+    background-color: black;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+}
+
+.btns:hover {
+    background: white;
+    border: 1px solid black;
+    color: black;
+}
+
+/* background section2 */
+.bg2 {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.fbox {
+    position: relative;
+    overflow: hidden;
+}
+
+.fbox img {
+    width: 100%;
+    transition: 0.9s;
+}
+
+.fbox h1 {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    color: #fff;
+    transform: translateY(100px);
+    transition: 0.9s;
+}
+
+.fbox:hover h1 {
+    transform: translateY(0);
+}
+
+.fbox:hover img {
+    transform: scale(1.2);
+}
+
+.flex-g {
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.one {
+    width: 66%;
+}
+
+.two {
+    width: 32%;
+}
+
+/* background section3 */
+ul li a {
+    color: black;
+    padding: 0px 30px;
+    font-size: 18px;
+}
+
+.pp {
+    padding: 30px 0px;
+    font-size: 16px;
+}
+
+.cc {
+    font-weight: bold;
+}
+
+/* hero2 section */
+.hero2 {
+    height: 70vh;
+    background: linear-gradient(rgba(18, 14, 14, 0.619), rgba(6, 15, 6, 0.619)), url(../img/youtube.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    text-align: center;
+    line-height: 120px;
+    font-size: 50px;
+}
+
+.circle a i {
+    color: orange;
+}
+
+.hero2 h1 {
+    padding: 10px 0;
+}
+
+/* details section */
+.dd {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.team_box h4 {
+    padding: 20px;
+    color: gray;
+}
+
+/* footer section */
+.footer_section {
+    background: #16161E;
+    padding: 50px 0px;
+}
+
+.footer_top ul li {
+    color: #fff;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+.email {
+    padding-left: 50px;
+}
+
+.all {
+    font-size: 22px;
+}
+
+.call {
+    padding-left: 50px;
+}
+
+.icon li {
+    display: inline-block;
+}
+
+.icon li a {
+    color: #fff;
+    padding: 0px 10px 0px 0px;
+    font-size: 14px;
+}
+
+footer {
+    padding: 20px 0px;
+    background: #16161E;
+    text-align: center;
+    border-top: 1px solid rgba(104, 104, 104, 0.514);
+}
+
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer_top ul li{
+    font-size: 16px;
+}
+footer p {
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 0px;
+}
+
+
+/* responsive */
+@media (min-width:480px) and (max-width:992px){
+    .flex{flex-direction: column;}
+    .con{margin: 10px 20px;}
+    .one,.two{width: 100%;}
+    .list-bar{display: block;}
+    .menu{
+        display: none;
+    }
+    .header-box{
+        display: flex;
+        flex-direction: row;   
+    }
+     
+    .footer_top{flex-direction: column;
+    align-items: center;}
+}
+    
